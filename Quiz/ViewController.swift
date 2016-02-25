@@ -42,7 +42,7 @@ class ViewController: UIViewController {
             QNumber = 0
             QLabel.text = Questions[QNumber].Question
             
-            for i in 0..<Buttons.count {
+            for i in 0..<Buttons.count 
                 Buttons[i].setTitle(Questions[QNumber].Answers[i], forState: UIControlState.Normal)
             }
             
