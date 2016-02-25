@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,87 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4aO-Zv-5Sv">
+                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dd4-D1-W6w">
+                                <rect key="frame" x="20" y="79" width="560" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.5273340630116341" blue="0.43768321904833418" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Oio-hG-Q2k"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mn6-4j-QTE">
+                                <rect key="frame" x="20" y="140" width="560" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.52733406299999996" blue="0.43768321900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="4wS-E2-2qv"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckj-MK-bon">
+                                <rect key="frame" x="20" y="201" width="560" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.52733406299999996" blue="0.43768321900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="YKJ-Zd-Opn"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQr-go-TOd">
+                                <rect key="frame" x="20" y="262" width="560" height="53"/>
+                                <color key="backgroundColor" red="1" green="0.52733406299999996" blue="0.43768321900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ckj-MK-bon" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3A7-mW-zbn"/>
+                            <constraint firstItem="mn6-4j-QTE" firstAttribute="top" secondItem="dd4-D1-W6w" secondAttribute="bottom" constant="8" id="6Wz-H6-R3S"/>
+                            <constraint firstItem="ckj-MK-bon" firstAttribute="top" secondItem="mn6-4j-QTE" secondAttribute="bottom" constant="8" id="AbB-Rz-Kmd"/>
+                            <constraint firstItem="mn6-4j-QTE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CNP-QA-VGy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CQr-go-TOd" secondAttribute="trailing" id="GGr-SH-fR5"/>
+                            <constraint firstItem="4aO-Zv-5Sv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="HXS-7s-cQC"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="CQr-go-TOd" secondAttribute="leading" id="IAt-TR-efW"/>
+                            <constraint firstItem="4aO-Zv-5Sv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="P01-7b-nJF"/>
+                            <constraint firstItem="4aO-Zv-5Sv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rhy-c2-b0X"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4aO-Zv-5Sv" secondAttribute="trailing" id="To1-ec-DYw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dd4-D1-W6w" secondAttribute="trailing" id="XMe-9P-WCA"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="mn6-4j-QTE" secondAttribute="leading" id="bRC-jC-5jj"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4aO-Zv-5Sv" secondAttribute="leading" id="c5a-zO-b62"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ckj-MK-bon" secondAttribute="trailing" id="cuD-ay-pUV"/>
+                            <constraint firstItem="dd4-D1-W6w" firstAttribute="top" secondItem="4aO-Zv-5Sv" secondAttribute="bottom" constant="38" id="gmQ-SF-Vce"/>
+                            <constraint firstItem="CQr-go-TOd" firstAttribute="top" secondItem="ckj-MK-bon" secondAttribute="bottom" constant="8" id="j0D-Ub-gOl"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ckj-MK-bon" secondAttribute="leading" id="kVH-n7-CWs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mn6-4j-QTE" secondAttribute="trailing" id="n1h-wR-orX"/>
+                            <constraint firstItem="CQr-go-TOd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vy5-Yz-39j"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dd4-D1-W6w" secondAttribute="leading" id="xJj-lm-8q5"/>
+                            <constraint firstItem="dd4-D1-W6w" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zoz-OT-dwe"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="QLabel" destination="4aO-Zv-5Sv" id="ITj-cM-PDM"/>
+                        <outletCollection property="Buttons" destination="dd4-D1-W6w" collectionClass="NSMutableArray" id="v3T-lH-XDa"/>
+                        <outletCollection property="Buttons" destination="mn6-4j-QTE" collectionClass="NSMutableArray" id="w9a-Y0-tFy"/>
+                        <outletCollection property="Buttons" destination="ckj-MK-bon" collectionClass="NSMutableArray" id="yeE-74-4ur"/>
+                        <outletCollection property="Buttons" destination="CQr-go-TOd" collectionClass="NSMutableArray" id="j44-XW-con"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="387"/>
         </scene>
     </scenes>
 </document>
